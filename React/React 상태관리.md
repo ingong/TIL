@@ -14,9 +14,9 @@
 - Component Composition 을 통해 해결
   ```jsx
   export default function App() {
-    const content = "Who needs me?";
+    const content = 'Who needs me?';
     return (
-      <div className="App">
+      <div className='App'>
         <FirstComponent>
           <SecondComponent>
             <ThirdComponent>
@@ -60,9 +60,3 @@
 - Transitions
   - Reducer 와 같은 형태로 별도의 상태 변경 과정을 표현한다.
   - pure function 인지, testable 코드인지, view 에 독립적인지 확인해야한다.
-
-## 5. Flux 아키텍쳐 적용하기
-
-## 6. 서버와의 상태 동기화
-
-## 7. react-query, SWR
