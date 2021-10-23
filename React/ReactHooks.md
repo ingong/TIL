@@ -6,14 +6,14 @@
 
 `useReducer 사용법`
 
-```jsx=
+```jsx
 // 초기 state를 두번째 파라미터로 전달(=initialArg)해 state를 초기화할 수 있다
 const [state, dispatch] = useReducer(reducer, initialArg, init);
 ```
 
 `reducer 사용법`
 
-```jsx=
+```jsx
 function reducer(state, action){
   // 새로운 상태를 만드는 로직
   // const nextState = ...
