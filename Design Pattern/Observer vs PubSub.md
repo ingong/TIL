@@ -49,3 +49,11 @@ const store = createStore();
 store.subscribe(observer1.changeOccur);
 store.changeState();
 ```
+
+## PubSub 패턴은 왜 사용할까?
+
+## PubSub 패턴은 무엇인가?
+
+## Observer 패턴과 PubSub 패턴의 차이는?
+
+## Redux 는 왜 PubSub 패턴을 사용한걸까?
