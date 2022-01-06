@@ -52,8 +52,13 @@ store.changeState();
 
 ## PubSub 패턴은 왜 사용할까?
 
-## PubSub 패턴은 무엇인가?
+구독자들에게 작업의 변화를 알린다는 측면에서 Observer 패턴과 동일하지만, 이벤트 관리자 또는 MessageBroker 를 두고 느슨한 관계를 갖는 점에서 차이를 갖는다.
 
-## Observer 패턴과 PubSub 패턴의 차이는?
+기존 Subject의 `Observer 이벤트 전파`와 `작업 수행 기능`을 나누어 각각의 핵심 기능에 집중할 수 있게 된다.
 
-## Redux 는 왜 PubSub 패턴을 사용한걸까?
+이를 통해 크게 5가지의 장점을 얻을 수 있다.
+
+1. Publisher 와 Subscriber 가 서로 느슨한 결합을 갖게 되어 안정성이 향상된다.
+2. S : Message Broker 가 queue 역할을 하여, Subscriber 가 Publisher 의 상태를 확인하지 않아도 된다.
+3. P : Publisher 가 input channel 을 통해 메시지를 보내고, 응답에 상관없이 비동기적으로 작업을 수행할 수 있게 된다.
+4. 비동기적으로 처리되므로 시스템의 자원 낭비를 줄일 수 있다.
