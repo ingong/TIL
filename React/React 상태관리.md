@@ -6,7 +6,7 @@
 ## 2. 리액트의 상태 관리
 
 - Component Block State : 컴포넌트 내에서 가지고 있는 상태로, UI 는 이 state 기반으로 렌더링된다.
-- COmponent Sharing State : 다른 node 계층에 전달하며, Props drilling 문제가 발생할 수 있다.
+- Component Sharing State : 다른 node 계층에 전달하며, Props drilling 문제가 발생할 수 있다.
 
 ## 3. props drilling 을 해결하는 방법
 
@@ -16,7 +16,7 @@
   export default function App() {
     const content = 'Who needs me?';
     return (
-      <div className='App'>
+      <div className="App">
         <FirstComponent>
           <SecondComponent>
             <ThirdComponent>
